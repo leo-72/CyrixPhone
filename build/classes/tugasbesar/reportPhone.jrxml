@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8b44bc3d-d153-439f-8825-ab0c9e83c34a">
+	<property name="ireport.zoom" value="1.4641000000000017"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     datatabel.`nama` AS datatabel_nama,
+     datatabel.`alamat` AS datatabel_alamat,
+     datatabel.`noHp` AS datatabel_noHp,
+     datatabel.`kodeBarang` AS datatabel_kodeBarang,
+     datatabel.`smartphone` AS datatabel_smartphone,
+     datatabel.`type` AS datatabel_type,
+     datatabel.`harga` AS datatabel_harga
+FROM
+     `datatabel` datatabel]]>
+	</queryString>
+	<field name="datatabel_nama" class="java.lang.String"/>
+	<field name="datatabel_alamat" class="java.lang.String"/>
+	<field name="datatabel_noHp" class="java.lang.String"/>
+	<field name="datatabel_kodeBarang" class="java.lang.String"/>
+	<field name="datatabel_smartphone" class="java.lang.String"/>
+	<field name="datatabel_type" class="java.lang.String"/>
+	<field name="datatabel_harga" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="116" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="14" y="10" width="107" height="93" uuid="d5322fb7-6d3d-42a3-8e49-8d4a30e3efb4"/>
+				<imageExpression><![CDATA["C:\\Users\\user\\Pictures\\imagesPBO\\logoImg (2).png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="121" y="11" width="324" height="68" forecolor="#0000FF" uuid="b2a3a7a5-6141-4ac1-8f37-583e36a4cfaf"/>
+				<textElement>
+					<font fontName="SansSerif" size="54" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cyrix Phone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="79" width="301" height="15" forecolor="#000000" uuid="ea9c6442-cdd1-4af5-9bc0-59282985e21b"/>
+				<text><![CDATA["Menjual mulai dari Smartphone Merk Apapun hingga Aksesorisya"]]></text>
+			</staticText>
+			<line>
+				<reportElement x="14" y="113" width="527" height="1" uuid="9b30579b-ab72-4fa1-a332-ecef19d8ca61"/>
+			</line>
+			<image hAlign="Right" vAlign="Middle">
+				<reportElement x="445" y="11" width="96" height="92" uuid="81e1c1fd-d98b-469d-8bab-ca51aa9692af"/>
+				<imageExpression><![CDATA["C:\\Users\\user\\Pictures\\imagesPBO\\centang.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="186" y="11" width="184" height="27" uuid="9275beb4-f23e-4a58-a3c0-c3cab6f1bc8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTA PEMBELIAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="2" width="82" height="19" uuid="3389c548-f939-41d4-841c-25d720b070b7"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="2" width="75" height="19" uuid="26f5072e-ca12-4a75-ac15-a811c39a4911"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="2" width="77" height="19" uuid="780090b4-20c1-4c5a-b9cb-4a8d5b7a110a"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nomor Handphone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="249" y="2" width="67" height="19" uuid="761d84dd-14fc-413a-bef1-8f0bf0e1444a"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="2" width="74" height="19" uuid="3b1e4bfe-dc1b-46d5-9e9b-fda5243716e9"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Merk Smartphone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="2" width="92" height="19" uuid="e229e25c-9d11-4cc1-ae92-96f6b9722cfe"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type Smartphone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="2" width="59" height="19" uuid="abaafaa0-2bfe-4be9-b04f-0f9115e0f98b"/>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Harga Barang]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="0" width="82" height="16" uuid="4cd8cc89-c465-4f3b-813b-2050d9c2cddb"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datatabel_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="97" y="0" width="75" height="16" uuid="7045ae24-ac1b-49d4-a21c-4e45ed124d95"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datatabel_alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="0" width="77" height="16" uuid="8ad0743f-9469-4a1d-a611-509d365d64aa"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datatabel_noHp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="249" y="0" width="67" height="16" uuid="1561eb04-2400-48c9-86e6-78168c158f69"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datatabel_kodeBarang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="74" height="16" uuid="67430b47-f5a0-456c-ab13-eafec5688563"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datatabel_smartphone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="92" height="16" uuid="fad79b9d-c188-46d9-bc0b-70cde5492f08"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datatabel_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="482" y="0" width="59" height="16" uuid="11357f7c-58c1-457d-87f1-df36aa684b6e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datatabel_harga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="71" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="480" y="0" width="61" height="14" uuid="324e76e2-bacc-49e2-8b4d-f64cbf8a46d6"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="440" y="0" width="40" height="14" uuid="23745702-bd9e-4e82-b585-2719bec2a5a8"/>
+				<text><![CDATA[Madiun,]]></text>
+			</staticText>
+			<textField pattern="h.mm a">
+				<reportElement x="503" y="14" width="38" height="14" uuid="0ca78c03-bc77-4d83-92e6-63a3e259f150"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="186" y="11" width="184" height="27" uuid="9275beb4-f23e-4a58-a3c0-c3cab6f1bc8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTA PEMBELIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="38" width="396" height="33" uuid="a2a65170-3728-4a7d-bf87-d65be98a9d74"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Colonna MT" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TERMAKASIH SEMOGA HAPPY]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="14" splitType="Stretch"/>
+	</summary>
+</jasperReport>
